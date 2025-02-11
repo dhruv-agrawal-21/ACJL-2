@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Automobile Component of Goa Limited</title>
+  <style>
+    body.login-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: #fff;
+      border-radius: 10px; /* Adding border radius */
+      padding: 40px 30px; /* Increasing padding */
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    }
+
+    .login-container .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-container .header img {
+      height: 70px; /* Increasing height */
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .login-container .header h1 {
+      display: inline;
+      font-size: 24px;
+      vertical-align: middle;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 30px; /* Increasing bottom margin */
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-container .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px; /* Adjusting bottom margin */
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 10px; /* Adding margin-bottom */
+    }
+
+    .login-container button:hover {
+      background-color: #0056b3;
+    }
+
+    .login-container .otp-btn {
+      background-color: #28a745; /* Green background for OTP button */
+    }
+
+    .login-container .otp-btn:hover {
+      background-color: #218838; /* Darker green on hover */
+    }
+  </style>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+</head>
+<body class="login-page">
+  <!-- Sign In Container -->
+  <div class="login-container">
+    <div class="header">
+      <img src="ACJL_logo.jpg" alt="ACJL Logo">
+      <h1>Automobile Component of Goa Limited</h1>
+    </div>
+    <h2>Sign In</h2>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <div class="options">
+      <label><input type="checkbox"> Save credentials</label>
+      <a href="#" style="color: black">Reset Password</a>
+    </div>
+    <button type="submit">Sign in</button>
+    <button class="otp-btn" onclick="location.href='otp.html'">Login with OTP</button>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  ></script>
+</body>
+</html>
